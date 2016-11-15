@@ -1,0 +1,446 @@
+html{
+	overflow-x: hidden;   
+}
+
+body{
+    font-family: 'Questrial', sans-serif;
+}
+.no-pb{
+	margin-bottom:  0vh !important;
+}
+.left-side{
+	position: fixed;
+	width: 30%;
+}
+.intro{
+    position: absolute;
+    padding: 10vh 0vh 8vh 6vh;
+}
+.intro-text h4{
+	font-family: alberto;
+	color: #00eeff;
+	padding-right: 19vh;
+}
+.intro-text p{
+	padding-right: 16vh;
+}
+.no-col{
+	padding: 0 !important;
+}
+.right-side{
+	/*box-shadow: 0px 2px 40px rgba(0,0,0,.06);*/
+    position: static;
+/*	background-image: url(../img/design.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;*/
+}
+
+a.btn{
+	font-size: 2.2vh;
+	background-color: #00eeff;
+}
+.cv-button{
+	padding-top: 3vh;
+}
+.social-net{
+	font-size: 1.8rem;
+	padding-bottom: 2vh;
+}
+.social-net span{
+	padding: 1vh; 
+	color:  #00eeff;
+}
+
+.menubar span{
+	z-index: 301;
+}
+
+.open{
+	visibility: visible;
+	transform: scale(1.2,1.2);
+}
+
+.close{
+	visibility: hidden;
+}
+
+.nav-list{
+    font-size: 5rem;
+    text-align: center;
+    font-family: "albertoregular";
+    top: 6vh;
+    position: relative;
+}
+
+a.line{
+    color:  rgba(21, 255, 255, 1); !important;
+}
+
+a.line:hover{
+    text-decoration: line-through;
+}
+
+div#open{
+    background-color: rgba(0, 0, 7, 0.9);
+    position: fixed;
+    z-index: 300;
+    box-shadow: 0 20px 40px rgba(0,0,0,.1);
+    transition: all .3s;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.presentation{
+	font-size: 1.5rem;
+	background-image: url(../img/fondo2.jpg);
+	background-size: cover;
+	height: 100vh;
+	font-family: alberto;
+}
+.presentation a{
+	color: #d6d3c3;
+	padding-left: 4vh;
+}
+
+.letras {
+    padding-top: 42vh;
+    font-family: alberto;
+    font-size: 4rem;
+    text-align: center;
+    color: #d6d3c3;
+}
+
+/*SKILLS SECTION*/
+/*.icongif{
+	width: 8vh;
+    padding-top: 3vh;
+}*/
+.title-skills p{
+	color: #545454;
+	padding-right: 3vh;
+/*	font-family: alberto;*/
+	font-size: 1.1rem;
+	letter-spacing: .6vh;
+}
+.title-skills h2{
+	margin: 0;
+	padding-top: 4vh;	
+	font-family: alberto;
+	letter-spacing: 3vh;
+	color: #5b6c6d;
+}
+.title-skills span{
+	font-size: 2rem;
+	padding-right: 2vh;
+}
+.fondo-1{
+	background-color: #EC7063;
+}
+.fondo-3{
+	background-color: #83afcb;
+}
+
+.fondo-2{
+	background: #545454;
+}
+.pd-2{
+	padding-right: 2vh;
+}
+
+/*SKILLS 2*/
+
+.skill1{
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+    padding: 4vh;
+    background: #7aedfe;
+	margin-bottom: 3vh;
+}
+
+.icongif{
+    width: 15vh;
+    margin-left: 30%;
+}
+
+.skills{
+	padding-top: 6vh;
+	color: #545454;
+}
+
+.contacto{
+	background-image: url(../img/contact5.jpg);
+	background-size: cover;
+	display: none;
+}
+/*.skills{
+	 box-shadow: 0px 2px 40px rgba(0,0,0,.08);
+
+}*/
+/*.skill, .skill-n{
+	padding: 3vh 6vh 2vh 6vh;
+}
+.skill p{
+    font-size: 1.1rem;
+    color: #545454;
+    text-align: justify;
+}
+
+.skill-n p{
+	font-size: 1.1rem;
+    color: #545454;
+    text-align: justify;
+}
+
+.skill h4{
+	color: #00eeff;
+}
+
+.skills h4{
+    font-family: alberto;
+    letter-spacing: 0.1vh;
+    font-size: 3.2rem;
+}
+.c-gray{
+	color: #5b6c6d;
+}
+.c-blue{
+	color:  #00eeff;
+}*/
+/*PORTFOLIO SECTION*/
+.portfolio-section{
+	padding-top: 6vh;
+}
+.title-work h2{
+	margin: 0;
+	padding-top: 4vh;	
+	font-family: alberto;
+	letter-spacing: 3vh;
+	color: #5b6c6d;
+}
+
+.title-work p{
+	color: #5b6c6d;
+	padding-bottom:  3vh;
+	font-size: 1.1rem;
+	letter-spacing: .4vh;
+}
+
+.title-work span{
+	font-size: 2rem;
+	color: #5b6c6d;
+}
+.julliard{
+     background-image: url(../img/julliard.jpg);
+     background-position-x: 30%;
+}
+
+.portafolio{
+     background-image: url(../img/portafolio.jpg);
+     background-position-x: 50%;
+}
+
+.user-testing{
+     background-image: url(../img/user-testing.jpg);
+     background-position-x: 50%;
+}
+.twitter{
+     background-image: url(../img/twitter.jpg);
+     background-position-x: 30%;
+     cursor: pointer;
+}
+
+.trello{
+     background-image: url(../img/trello.jpg);
+}
+
+.lyft{
+     background-image: url(../img/lyft.jpg);
+     background-position-x: 50%;
+}
+
+.v-magazine{
+     background-image: url(../img/v-magazine.jpg);
+     background-position-y: 45%;
+}
+
+.book-cover{
+     background-image: url(../img/book-cover.jpg);
+}
+
+.powertrekk{
+     background-image: url(../img/powertrekk.jpg);
+}
+.portfolio div{
+    width: 100%;
+    vertical-align: top;
+    background-size: cover;
+    height: 280px;
+    background-repeat: no-repeat;
+    padding: 0px !important;
+}
+.portfolio div.row{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+/*MOSTRAR ICONOS - HOVER*/
+#show-hover .text-icons{
+    position: absolute;
+    top: 25vh;
+    left: 0;
+    visibility: hidden;
+    font-size: 1.1rem;
+    width: 100%;
+    color: white;
+    z-index: 10;
+    margin: auto;
+    text-align: center;
+    -webkit-transform: translateY(70px);
+    -moz-transform: translateY(70px);
+}
+#show-hover:hover .text-icons {
+    visibility:visible;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    transition-property: transform;
+    transition: all .5s ease;
+}
+/*FIN MOSTRAR ICONOS - HOVER*/
+
+/*MOSTRAR TEXTO - HOVER*/
+#show-hover .text {
+    position: absolute;
+    bottom: 19vh;
+    left: 0;
+    visibility: hidden;
+    font-size: 1.5rem;
+    width: 100%;
+    color: white;
+    z-index: 10;
+    margin: auto;
+    text-align: center;
+    -webkit-transform: translateY(70px);
+    -moz-transform: translateY(70px);
+}
+
+#show-hover:hover .text {
+    visibility:visible;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    transition-property: transform;
+    transition: all .5s ease;
+}
+/*FIN MOSTRAR TEXTO-HOVER*/
+
+/*OSCURECER IMG*/
+#show-hover{
+    position: relative; 
+} 
+
+#show-hover:after {
+    content:'\A';
+    position:absolute;
+    width:100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,0.6);
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+#show-hover:hover:after {
+    opacity:2;
+}
+/*FIN OSCURECER IMG*/
+.about p{
+	padding: 0vh 15vh;
+    text-align: justify;
+    font-size: 1.05rem;
+}
+
+.title-about h2{
+	margin: 0;
+	padding-bottom: 2vh;
+	padding-top: 6vh;	
+	font-family: alberto;
+	letter-spacing: 3vh;
+	color: #5b6c6d;
+}
+.footer{
+	color: #00eeff;
+	font-family: alberto;
+	font-size: 1.2rem;
+	letter-spacing: 0.5vh;
+}
+
+@media (max-width: 991px){
+	.left-side {
+	    position: static;
+	    width: 100%;
+	    height: auto;
+	}
+	.intro{
+	    padding: 5vh 0vh 4vh 6vh;
+	}
+
+	.intro-text{
+		display: none;
+	}
+	.right-side {
+	    width: 100%;
+	    margin-left: 0%;
+	}
+
+	.intro{
+		position: static;
+		width: 100%;
+	}
+
+	.presentation{
+	    height: 50vh;
+	}
+	.letras {
+    	padding-top: 15vh;
+	}
+
+	.skill1{
+		margin-bottom: 6vh;
+	}
+
+/*	.mg-t{
+		margin-top: 2vh !important;
+	}*/
+
+/*	.no-mgb{
+		margin-bottom: 0px !important;
+	}*/
+	.title-work{
+		padding: 0vh 4vh;
+	}
+	
+	.about p{
+		padding: 0vh 4vh;
+	}
+	.icongif{
+		width: 20vh;
+	}
+	.contacto{
+		    display: block;
+    position: relative;
+    top: 417vh;
+    padding: 6vh 4vh;
+	}
+}
+@media (min-width: 990px) (max-width: 1120px){
+	.left-side {
+		width: 25%;
+	}
+	.intro {
+	    position: absolute;
+	    padding: 10vh 0vh 8vh 1vh;
+	}
+	.intro-text p {
+	    padding-right: 6vh;
+	}
+
+
+	
+}
