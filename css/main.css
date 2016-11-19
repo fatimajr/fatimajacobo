@@ -4,6 +4,11 @@ html{
 
 body{
     font-family: 'Questrial', sans-serif;
+    color: #545454;
+}
+
+.skill1 p{
+	text-align: justify;
 }
 .no-pb{
 	margin-bottom:  0vh !important;
@@ -15,6 +20,7 @@ body{
 .intro{
     position: absolute;
     padding: 10vh 0vh 8vh 6vh;
+    color: #545454;
 }
 .intro-text h4{
 	font-family: alberto;
@@ -28,11 +34,9 @@ body{
 	padding: 0 !important;
 }
 .right-side{
-	/*box-shadow: 0px 2px 40px rgba(0,0,0,.06);*/
     position: static;
-/*	background-image: url(../img/design.jpg);
-	background-size: contain;
-	background-repeat: no-repeat;*/
+/*    background-image: url(../img/design.jpg);
+    background-size: cover;*/
 }
 
 a.btn{
@@ -42,17 +46,24 @@ a.btn{
 .cv-button{
 	padding-top: 3vh;
 }
-.social-net{
+.social-net, .social-net-2{
 	font-size: 1.8rem;
 	padding-bottom: 2vh;
 }
-.social-net span{
+.social-net span, .social-net-2 span{
 	padding: 1vh; 
 	color:  #00eeff;
 }
 
-.menubar span{
-	z-index: 301;
+.menubar{
+	position: fixed;
+    background: rgba(251, 251, 251, 0.34);
+    right: 4vh;
+    top: 4vh;
+    font-size: 1.5rem;
+    color: #00eeff;
+    padding: 1vh 2vh;
+    z-index: 301;
 }
 
 .open{
@@ -103,7 +114,7 @@ div#open{
 }
 
 .letras {
-    padding-top: 42vh;
+    padding-top: 45vh;
     font-family: alberto;
     font-size: 4rem;
     text-align: center;
@@ -111,38 +122,31 @@ div#open{
 }
 
 /*SKILLS SECTION*/
-/*.icongif{
-	width: 8vh;
-    padding-top: 3vh;
-}*/
-.title-skills p{
-	color: #545454;
-	padding-right: 3vh;
-/*	font-family: alberto;*/
-	font-size: 1.1rem;
-	letter-spacing: .6vh;
-}
-.title-skills h2{
-	margin: 0;
-	padding-top: 4vh;	
-	font-family: alberto;
-	letter-spacing: 3vh;
-	color: #5b6c6d;
-}
-.title-skills span{
-	font-size: 2rem;
-	padding-right: 2vh;
-}
-.fondo-1{
-	background-color: #EC7063;
-}
-.fondo-3{
-	background-color: #83afcb;
+.icongif img{
+	width: 15vh;
 }
 
-.fondo-2{
-	background: #545454;
+.title-skills, .title-work{
+	padding-bottom: 5vh;
 }
+.title-skills p, .title-work p, .title-contact p, .title-about p{
+	color: #00eeff;
+	font-size: 3rem;
+	margin: 0;
+	letter-spacing: .4vh;
+}
+
+.title-skills span.icon-star, .title-work span.icon-display, .title-about span.icon-user{
+	font-size: 2rem;
+	color: #00eeff;
+}
+
+.about p.parrafo{
+	padding: 0vh 20vh;
+    text-align: justify;
+    font-size: 1.05rem;
+}
+
 .pd-2{
 	padding-right: 2vh;
 }
@@ -152,8 +156,8 @@ div#open{
 .skill1{
     box-shadow: 0 20px 40px rgba(0,0,0,0.05);
     padding: 4vh;
-    background: #7aedfe;
-	margin-bottom: 3vh;
+    background: rgba(0, 238, 255, 0.52);
+    margin-bottom: 2vh;
 }
 
 .icongif{
@@ -161,73 +165,16 @@ div#open{
     margin-left: 30%;
 }
 
-.skills{
+.skills, .about{
 	padding-top: 6vh;
 	color: #545454;
 }
 
-/*.contacto{
-	background-image: url(../img/contact5.jpg);
-	background-size: cover;
-	display: none;
-}*/
-/*.skills{
-	 box-shadow: 0px 2px 40px rgba(0,0,0,.08);
-
-}*/
-/*.skill, .skill-n{
-	padding: 3vh 6vh 2vh 6vh;
-}
-.skill p{
-    font-size: 1.1rem;
-    color: #545454;
-    text-align: justify;
-}
-
-.skill-n p{
-	font-size: 1.1rem;
-    color: #545454;
-    text-align: justify;
-}
-
-.skill h4{
-	color: #00eeff;
-}
-
-.skills h4{
-    font-family: alberto;
-    letter-spacing: 0.1vh;
-    font-size: 3.2rem;
-}
-.c-gray{
-	color: #5b6c6d;
-}
-.c-blue{
-	color:  #00eeff;
-}*/
 /*PORTFOLIO SECTION*/
 .portfolio-section{
-	padding-top: 4vh;
-}
-.title-work h2{
-	margin: 0;
-	padding-top: 4vh;	
-	font-family: alberto;
-	letter-spacing: 3vh;
-	color: #5b6c6d;
+	padding-top: 2vh;
 }
 
-.title-work p{
-	color: #5b6c6d;
-	padding-bottom:  3vh;
-	font-size: 1.1rem;
-	letter-spacing: .4vh;
-}
-
-.title-work span{
-	font-size: 2rem;
-	color: #5b6c6d;
-}
 .julliard{
      background-image: url(../img/julliard.jpg);
      background-position-x: 30%;
@@ -284,7 +231,7 @@ div#open{
 /*MOSTRAR ICONOS - HOVER*/
 #show-hover .text-icons{
     position: absolute;
-    top: 25vh;
+    top: 28vh;
     left: 0;
     visibility: hidden;
     font-size: 1.1rem;
@@ -350,23 +297,9 @@ div#open{
     opacity:2;
 }
 /*FIN OSCURECER IMG*/
-.about p{
-	padding: 0vh 15vh;
-    text-align: justify;
-    font-size: 1.05rem;
-}
-.title-contact {
-	font-family: alberto;
-	letter-spacing: 3vh;
-	color: #5b6c6d;
-}
-.title-about h2{
-	margin: 0;
-	padding-bottom: 2vh;
-	padding-top: 6vh;	
-	font-family: alberto;
-	letter-spacing: 3vh;
-	color: #5b6c6d;
+
+.contact{
+	display: none;
 }
 
 .footer{
@@ -376,27 +309,27 @@ div#open{
 	letter-spacing: 0.5vh;
 }
 
-@media (max-width: 991px){
+@media (max-width: 992px){
 	.left-side {
 	    position: static;
 	    width: 100%;
 	    height: auto;
 	}
 	.intro{
-	    padding: 5vh 0vh 4vh 6vh;
+	    padding: 5vh 0vh 4vh 0vh;
+	    text-align: center;
+	    position: static;
+		width: 100%;
 	}
 
-	.intro-text{
-		display: none;
+	.intro-text p{
+		padding: 0px;
+		margin: 2vh 6vh;
 	}
+
 	.right-side {
 	    width: 100%;
 	    margin-left: 0%;
-	}
-
-	.intro{
-		position: static;
-		width: 100%;
 	}
 
 	.presentation{
@@ -404,52 +337,35 @@ div#open{
 	}
 	.letras {
     	padding-top: 15vh;
+    	font-size: 3rem;
 	}
 
 	.skill1{
-		margin-bottom: 6vh;
-	}
-
-/*	.mg-t{
-		margin-top: 2vh !important;
-	}*/
-
-/*	.no-mgb{
-		margin-bottom: 0px !important;
-	}*/
-	.title-work{
-		padding: 0vh 4vh;
+		margin-bottom: 3vh;
 	}
 
 	.title-contact h2{
 		font-family: alberto;
 		letter-spacing: 3vh;
-		color: #5b6c6d;
+		color: rgba(0, 238, 255, 0.64);
 		padding-left: 2vh;
 	}
-	.about p{
-		padding: 0vh 4vh;
+	.contact{
+		display: block;
+		padding-bottom: 4vh;
+		padding-top: 4vh;
 	}
-	.icongif{
-		width: 20vh;
+	.icongif img{
+		width: 15vh;
 	}
-	.contacto{
-		position: relative;
-    	top: 3vh;
+	.about {
+		display: none;
 	}
-}
-@media (min-width: 990px) (max-width: 1120px){
-	.left-side {
-		width: 25%;
+	#show-hover .text-icons{
+		visibility: visible;
+		top: 20vh;
 	}
-	.intro {
-	    position: absolute;
-	    padding: 10vh 0vh 8vh 1vh;
+	#show-hover .text{
+		visibility: visible;
 	}
-	.intro-text p {
-	    padding-right: 6vh;
-	}
-
-
-	
 }

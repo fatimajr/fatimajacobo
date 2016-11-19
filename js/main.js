@@ -1,6 +1,6 @@
 
 var cargarPagina = function(){
-	$("span#bar").click(iconShow);
+	$(".menubar span").click(iconShow);
   $(".line").click(menuHidden);
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -38,7 +38,7 @@ var iconShow = function(){
 		$(this).removeClass("icon-th-menu-outline");
 		$(this).addClass("icon-cross");
 		$("#open").removeClass("close").addClass("open");
-	} else {
+	} else if($(this).attr('data-click-state') == 0){
 		$(this).attr('data-click-state', 1)
 		$(this).removeClass("icon-cross");
 		$(this).addClass("icon-th-menu-outline");
